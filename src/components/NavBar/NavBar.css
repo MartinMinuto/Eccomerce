@@ -1,0 +1,25 @@
+.Navbar{
+    background-color: #086788;
+    display: flex;
+    align-items: center;
+    width: 100vw;
+    gap: 30px;
+    padding-left: 25px;
+}
+
+.Title{
+    display: flex;
+    justify-content: start;
+    font-size: 2.5em;
+    font-weight: 600;
+}
+
+.NavContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 10px;
+    gap: 10px;
+}
+
+
