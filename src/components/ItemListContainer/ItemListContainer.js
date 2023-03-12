@@ -1,5 +1,6 @@
-import { useEffect, useEffect, useState } from 'react'
-import {getProducts} from '../../AsyncMock'
+import { useEffect, useState } from 'react'
+import { getProducts } from '../../AsyncMock'
+import ItemList from '../ItemList/ItemList'
 
 const ItemListContainer = (() =>{
     const [products, setProducts] = useState([])
@@ -11,9 +12,9 @@ const ItemListContainer = (() =>{
            })
     }, [])
 
-    const arrayProducts = products.map(product =>{
-        
-    })
+    return (
+      <ItemList products={products}/> 
+    )
 })
 
 export default ItemListContainer

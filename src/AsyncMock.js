@@ -51,7 +51,7 @@ const products = [
         category: 'Placas de video',
         img: 'https://www.qloud.ar/SITES/IMG/scp-hardstore-10-2020/181_03-03-2023-01-03-25-0000000000415069674930415069.png',
         stock: 5,
-        description: '',
+        description: 'Placa de video RTX 3080',
     }
 ];
 
