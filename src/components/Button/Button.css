@@ -1,12 +1,12 @@
 .Btn{
     color: rgb(0, 0, 0);
     background-color: #07a0c3;
-    padding: 8px;
+    padding: 5px;
     margin: 3px;
     border-radius: 20px;
     font-size: .9em;
     font-family: sans-serif;
-    font-weight: 400;
+    font-weight: 700;
     border: none;
     box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.5);
     gap: 60px;
@@ -14,7 +14,7 @@
 
 .Btn:Hover{
     color: rgb(255, 255, 255);
-    background-color: #07a1c36b;
+    background-color: #06596b;
     cursor: pointer;
     box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.8);
 }
