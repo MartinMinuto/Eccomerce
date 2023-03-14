@@ -8,9 +8,11 @@ const NavBar = () =>{
            <div  className='Navbar'>
                 <h1 className='Title'>Ecommerce</h1>
                 <div className='NavContainer'>
-                        <Button textLabel='Inicio'/>
-                        <Button textLabel='Contacto'/>
-                        <Button textLabel='Shop'/>
+                      <ul className='ulNav'>
+                        <li className='liNav'><a className='itemNav' href='#'>Home</a></li>
+                        <li className='liNav'><a className='itemNav' href='#'>About us</a></li>
+                        <li className='liNav'><a className='itemNav' href='#'>Shop</a></li>
+                      </ul>
                 </div>
                 <Cart quantity='3'/>
             </div>    
