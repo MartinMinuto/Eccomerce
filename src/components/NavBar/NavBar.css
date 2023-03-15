@@ -50,15 +50,9 @@
   list-style: none;
 }
 
-@media (min-width: 768px){
+@media (max-width: 1024px){
     .Navbar{
-        width: 100vw;
-    }
-}
-
-@media (min-width: 768px){
-    .Navbar{
-        width: 100vw;
+        width: 97.5vw;
     }
 }
 

@@ -6,10 +6,18 @@ const ItemCard = ({name, price, img, category}) => {
             <div className="cardContainer">
                 <img className='imgContainer' src={img}/>
                 <div className='textContainer'>
-                    <h2 className='nameContainer'>{name}</h2>
-                    <h3 className='categoryContainer'>{category}</h3>
-                    <h4 className='priceContainer'>${price}</h4>
+                    <div className='positionContainer'>
+                        <h2 className='nameContainer'>{name}</h2>
+                    </div>
+                    <div className='positionContainer'>
+                        <h3 className='categoryContainer'>{category}</h3>
+                    </div>
+                    <div className='positionContainer'>
+                        <h4 className='priceContainer'>${price}</h4>
+                    </div>
+                    <div className='positionContainer'>
                     <Button textLabel='Comprar' className='Btn'/>
+                    </div>
                 </div>
             </div>
     )

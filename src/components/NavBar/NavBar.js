@@ -1,5 +1,4 @@
 import './NavBar.css'
-import Button from '../Button/Button'
 import Cart from '../Cart/Cart'
 
 const NavBar = () =>{
