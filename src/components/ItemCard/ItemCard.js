@@ -1,16 +1,18 @@
 import './ItemCard.css'
 import Button from '../Button/Button'
 
-const ItemCard = ({name, price, img, category}) => {
+const ItemCard = ({title, price, thumbnail, condition}) => {
     return(
             <div className="cardContainer">
-                <img className='imgContainer' src={img}/>
+                <div className='positionContainerImg'>
+                    <img className='imgContainer' src={thumbnail}/>
+                </div>
                 <div className='textContainer'>
                     <div className='positionContainer'>
-                        <h2 className='nameContainer'>{name}</h2>
+                        <h2 className='nameContainer'>{title}</h2>
                     </div>
                     <div className='positionContainer'>
-                        <h3 className='categoryContainer'>{category}</h3>
+                        <h3 className='categoryContainer'>{condition}</h3>
                     </div>
                     <div className='positionContainer'>
                         <h4 className='priceContainer'>${price}</h4>
