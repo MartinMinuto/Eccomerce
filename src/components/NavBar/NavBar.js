@@ -1,6 +1,5 @@
 import './NavBar.css'
 import Cart from '../Cart/Cart'
-import NavItemList from './NavItamList/NavItemList'
 
 const NavBar = () =>{
     return (
@@ -13,7 +12,6 @@ const NavBar = () =>{
                         <li className='liNav'><a className='itemNav' href='#'>About us</a></li>
                         <li className='liNav'><a className='itemNav' href='#'>Shop</a></li>
                       </ul>
-                      {/* <NavItemList/> */}
                 </div>
                 <Cart quantity='3'/>
             </div>    

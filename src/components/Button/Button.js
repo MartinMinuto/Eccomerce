@@ -1,11 +1,12 @@
 import './Button.css'
+import { Link } from 'react-router-dom'
 
 const Button = (props) => {
-    return <button 
-            onClick={props.clickFuncion}
+    return <Link 
+            to={`./item/${props.nroId}`}
             className='Btn'
            > {props.textLabel}
-           </button>
+           </Link>
 }
 
 export default Button

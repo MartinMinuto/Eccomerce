@@ -61,3 +61,8 @@ export const getProducts = () => {
     })
 }
 
+export const getProductsById = (productId) => {
+    return new Promise((resolve) => {
+      resolve(products.find(prod => prod.id === productId))
+    })
+}
