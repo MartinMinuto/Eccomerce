@@ -1,11 +1,12 @@
 import './ItemCard.css'
-import Button from '../Button/Button'
+import './Button.css'
+import { Link } from 'react-router-dom'
 
 const ItemCard = ({id, name, price, img, category}) => {
     return(
             <div className="cardContainer">
                 <div className='positionContainerImg'>
-                    <img className='imgContainer' src={img}/>
+                    <img className='imgContainer' src={img} alt={name}/>
                 </div>
                 <div className='textContainer'>
                     <div className='positionContainer'>
@@ -18,7 +19,11 @@ const ItemCard = ({id, name, price, img, category}) => {
                         <h4 className='priceContainer'>${price}</h4>
                     </div>
                     <div className='positionContainer'>
-                    <Button textLabel='Comprar' className='Btn' nroId={`${id}`}/>
+                    <Link 
+                            to={`./item/${id}`}
+                            className='Btn'
+                        >Detalles
+                    </Link>
                     </div>
                 </div>
             </div>
