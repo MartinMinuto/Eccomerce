@@ -9,8 +9,8 @@ function App() {
   return (
     <div className="App">
       <BrowserRouter>
-          <NavBar/>
-          <Banner/>
+            <NavBar/>
+            <Banner/>
             <Routes>
               <Route path='/' element={<ItemListContainer/>}/>
               <Route path='/category/:categoryId' element={<ItemListContainer/>}/>

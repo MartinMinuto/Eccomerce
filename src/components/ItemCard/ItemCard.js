@@ -20,7 +20,7 @@ const ItemCard = ({id, name, price, img, category}) => {
                     </div>
                     <div className='positionContainer'>
                     <Link 
-                            to={`./item/${id}`}
+                            to={`/item/${id}`}
                             className='Btn'
                         >Detalles
                     </Link>
