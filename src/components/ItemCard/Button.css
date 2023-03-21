@@ -11,9 +11,10 @@
     box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.5);
     gap: 60px;
     text-decoration: none;
+    border: 2px solid #0885a1;
 }
 
-.Btn:Hover{
+.Btn:hover{
     color: rgb(255, 255, 255);
     background-color: #06596b;
     cursor: pointer;
