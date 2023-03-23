@@ -1,5 +1,4 @@
 import './ItemCard.css'
-import './Button.css'
 import { Link } from 'react-router-dom'
 
 const ItemCard = ({id, name, price, img, category}) => {
