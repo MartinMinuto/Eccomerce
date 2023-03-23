@@ -12,7 +12,7 @@ const NavBar = () =>{
                         <li className='liNav'><Link className='itemNav' to='/'>Home</Link></li>
                         <li className='liNav'><Link className='itemNav' to='/category/Procesador'>Procesadores</Link></li>
                         <li className='liNav'><Link className='itemNav' to='/category/Memoria'>Memoria Ram</Link></li>
-                        <li className='liNav'><Link className='itemNav' to='/category/Placasdevideo'>Tarjetas graficas</Link></li>
+                        <li className='liNav'><Link className='itemNav' to='/category/Placas de video'>Tarjetas graficas</Link></li>
                       </ul>
                 </div>
                 <Cart quantity='3'/>
