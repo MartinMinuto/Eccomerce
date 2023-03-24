@@ -1,11 +1,15 @@
 import './Cart.css'
 import { FaCartPlus } from 'react-icons/fa';
+import { useContext } from 'react';
+import { CartContext } from '../CartContext/CartContext';
 
-const Cart = (props) => {
+const Cart = () => {
+   const { totalQuantity } = useContext(CartContext)
+
     return (
-        <div className='Cart'>
+        <div to='/cart' className='Cart'>
           <FaCartPlus className='CartIcon'/>
-          <p className='CartQuantity'>{props.quantity}</p>
+           {totalQuantity}
         </div>
     )
 }

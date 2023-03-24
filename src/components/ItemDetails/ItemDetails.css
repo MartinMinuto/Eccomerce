@@ -42,27 +42,3 @@
 .detailsPrice{
     font-size: 3em;
 }
-
-.detailsBtn{
-    color: rgb(0, 0, 0);
-    background-color: #07a0c3;
-    padding: 10px;
-    margin: 3px;
-    border-radius: 20px;
-    font-size: .9em;
-    font-family: sans-serif;
-    font-weight: 700;
-    border: none;
-    box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.5);
-    gap: 60px;
-    text-decoration: none;
-    border: 2px solid #0885a1;
-    width: 100px;
-}
-
-.detailsBtn:hover{
-    color: rgb(255, 255, 255);
-    background-color: #06596b;
-    cursor: pointer;
-    box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.8);
-}
