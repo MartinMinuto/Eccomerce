@@ -28,3 +28,18 @@
     cursor: pointer;
 }
 
+@media (max-width:770px){
+    .Cart{
+        top: 10px;
+        right: 100px;
+        width: 35px;
+        height: 35px;
+        font-size: 1em;
+    }
+    .CartIcon{
+        top: 10px;
+        right: 10px;
+        width: 15px;
+        height: 15px;
+    }
+}

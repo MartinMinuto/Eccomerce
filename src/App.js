@@ -6,6 +6,7 @@ import ItemDetailsContainer from './components/ItemDetailsContainer/ItemDetailsC
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import { CartProvider } from './components/CartContext/CartContext';
 import { useEffect, useState } from 'react';
+import NavbarMobile from './components/NavbarMobile/NavbarMobile';
 
 
 function DesktopView() {
@@ -31,6 +32,7 @@ function MobileView() {
     <div>
       <CartProvider>
           <BrowserRouter>
+                <NavbarMobile/>
                 <Banner/>
                 <Routes>
                   <Route path='/' element={<ItemListContainer/>}/>
