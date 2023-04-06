@@ -48,7 +48,7 @@ const products = [
         id: '6',
         name: 'Placa de Video GeForce RTX 3080',
         price: 100000,
-        category: 'Placasdevideo',
+        category: 'Placas de video',
         img: 'https://asset.msi.com/resize/image/global/product/product_9_20191024090506_5db0f8c2ee3a7.png62405b38c58fe0f07fcef2367d8a9ba1/600.png',
         stock: 5,
         description: 'Placa de video RTX 3080',

@@ -61,4 +61,18 @@
   list-style: none;
 }
 
-
+@media (max-width: 1024px){
+    .itemNav{
+        font-size: 1em;
+    }
+    .ulNav{
+        gap: 20px;
+        padding: 0px;
+    }
+    .NavContainer{
+        padding: 0px;
+    }
+    .Title{
+        font-size: 1.95em;
+    }
+}

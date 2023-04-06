@@ -39,7 +39,7 @@ function App() {
 
   useEffect(() => {
     function handleResize() {
-      if (window.innerWidth < 768) {
+      if (window.innerWidth < 770) {
         setIsMobile(true);
       } else {
         setIsMobile(false);
