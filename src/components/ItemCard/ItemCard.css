@@ -94,4 +94,19 @@
         height: 180px;
     }
  }
+@media (max-width:670px){
+    .cardContainer{
+        width: 40vw;
+        margin: auto;
+    }
+}
+
+@media (max-width: 500px){
+    .cardContainer{
+        width: 70vw;
+        margin: auto;
+        margin-bottom: 30px;
+    }
+}
+
 

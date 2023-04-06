@@ -19,11 +19,19 @@
 @media (max-width:1025px){
     .containerMain{ 
         grid-template-columns: 1fr 1fr 1fr;
+        gap: 10px;
     }
 }
 
-@media (max-width:1025px){
+
+@media (max-width:670px){
     .containerMain{ 
-        gap: 10px;
+      grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (max-width:500px){
+    .containerMain{ 
+        display: block;
     }
 }

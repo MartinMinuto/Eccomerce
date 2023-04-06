@@ -29,6 +29,16 @@ function DesktopView() {
 function MobileView() {
   return (
     <div>
+      <CartProvider>
+          <BrowserRouter>
+                <Banner/>
+                <Routes>
+                  <Route path='/' element={<ItemListContainer/>}/>
+                  <Route path='/category/:categoryId' element={<ItemListContainer/>}/>
+                  <Route path='/item/:productId' element={<ItemDetailsContainer/>}/>
+                </Routes>
+          </BrowserRouter>  
+      </CartProvider>
     </div>
   );
 }

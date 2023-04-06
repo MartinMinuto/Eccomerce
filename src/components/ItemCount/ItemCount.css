@@ -36,3 +36,20 @@
 .CountConainer{
     width: 42vw;
 }
+
+
+@media (max-width:770px) {
+    .BtnContainer{
+        padding: 0px;
+        gap: 40px;
+    }
+    .detailsBtn{
+        padding: 5px 15px;
+    }
+}
+
+@media (max-width:550px) {
+    #BtnAgregar{
+        width: 40vw;
+    }
+}

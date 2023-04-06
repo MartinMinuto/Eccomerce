@@ -12,6 +12,7 @@
     align-items: center;
     width: 40vw;
     height: 600px;
+    margin-top: 20px;
 }
 
 .detailsSubContainer{
@@ -33,6 +34,7 @@
     font-weight: 700;
     font-family: sans-serif ;
     font-size: 3em;
+    margin-top: 40px;
 }
 
 .detailsCategory{
@@ -42,4 +44,29 @@
 
 .detailsPrice{
     font-size: 3em;
+}
+
+
+@media (max-width: 770px){
+    .detailsContainer{
+        display: block;
+    }
+    .detailsPositionContainer{
+        height: 20%;
+    }
+    .detailsCategory{
+        padding: 0px;
+    }
+    .detailsImg{
+        width: 60vw;
+        height: 300px;
+        margin: auto;
+    }
+    .detailsName{
+        padding-top: 20px;
+        font-size: 2em;
+    }
+    .detailsPrice{
+        font-size: 2em;
+    }
 }
