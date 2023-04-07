@@ -1,0 +1,32 @@
+.Footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    width: 100vw;
+    height: 100px;
+    background-color: #086788;
+    margin: auto;
+}
+
+.GitHub{
+    width: 36px;
+    height: 36px;
+    color: #030303;
+}
+
+.GitHub:hover{
+    transition: 0.5s;
+    transform: scale(1.2);
+}
+
+.Linkedin{
+    width: 36px;
+    height: 36px;
+    color: #030303;
+}
+
+.Linkedin:hover{
+    transition: 0.5s;
+    transform: scale(1.2);
+}

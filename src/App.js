@@ -7,6 +7,7 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import { CartProvider } from './components/CartContext/CartContext';
 import { useEffect, useState } from 'react';
 import NavbarMobile from './components/NavbarMobile/NavbarMobile';
+import Footer from './components/Footer/Footer'
 
 
 function DesktopView() {
@@ -21,6 +22,7 @@ function DesktopView() {
                 <Route path='/category/:categoryId' element={<ItemListContainer/>}/>
                 <Route path='/item/:productId' element={<ItemDetailsContainer/>}/>
               </Routes>
+              <Footer/>
         </BrowserRouter>  
       </CartProvider>
     </div>
@@ -39,6 +41,7 @@ function MobileView() {
                   <Route path='/category/:categoryId' element={<ItemListContainer/>}/>
                   <Route path='/item/:productId' element={<ItemDetailsContainer/>}/>
                 </Routes>
+                <Footer/>
           </BrowserRouter>  
       </CartProvider>
     </div>
