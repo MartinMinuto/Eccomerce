@@ -9,7 +9,15 @@ export const CartProvider = ({children}) =>{
             if(!isInCart(productToAdd.id)) {
                 setCart(prev => [...prev, productToAdd])
             } else {
-                console.log('El productos ya esta en el carrito')
+                const updateCart = cart.map(prod => {
+                    if(prod.id === productToAdd.id) {
+                        return {...prod, quantity: productToAdd.quantity}
+                    } else {
+                        return prod
+                    }
+                })
+
+                setCart(updateCart)
             }
         }
 
@@ -31,6 +39,16 @@ export const CartProvider = ({children}) =>{
         }
 
         const totalQuantity = getTotalQuantity()
+
+        // const getTotal = () => {
+        //     let total = 0
+        //     cart.forEach(prod => {
+        //      total += prod.quantity * prod.price
+        //     })
+        //     return total
+        //  }
+ 
+        //  const total = getTotal()
 
 
         return(
