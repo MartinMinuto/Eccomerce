@@ -9,6 +9,7 @@ import { useEffect, useState } from 'react';
 import NavbarMobile from './components/NavbarMobile/NavbarMobile';
 import Footer from './components/Footer/Footer'
 import CartPage from './components/CartPage/CartPage';
+import Checkout from './components/Checkout/Checkout'
 
 
 function DesktopView() {
@@ -23,6 +24,7 @@ function DesktopView() {
                 <Route path='/category/:categoryId' element={<ItemListContainer/>}/>
                 <Route path='/item/:productId' element={<ItemDetailsContainer/>}/>
                 <Route path='/cart' element={<CartPage/>}/>
+                <Route path='/checkout' element={<Checkout/>}/>
               </Routes>
               <Footer/>
         </BrowserRouter>  
@@ -42,6 +44,8 @@ function MobileView() {
                   <Route path='/' element={<ItemListContainer/>}/>
                   <Route path='/category/:categoryId' element={<ItemListContainer/>}/>
                   <Route path='/item/:productId' element={<ItemDetailsContainer/>}/>
+                  <Route path='/cart' element={<CartPage/>}/>
+                  <Route path='/checkout' element={<Checkout/>}/>
                 </Routes>
                 <Footer/>
           </BrowserRouter>  

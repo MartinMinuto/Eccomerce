@@ -1,0 +1,8 @@
+.CheckoutContainer{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 30px;
+    height: 600px;
+    margin: auto;
+}

@@ -43,6 +43,12 @@
     border: 2px solid #0885a1;
 }
 
+@media (max-width: 770px) {
+    .Link{
+        width: 20vw;
+    }
+}
+
 .Link:hover{
     color: rgb(255, 255, 255);
     background-color: #06596b;
