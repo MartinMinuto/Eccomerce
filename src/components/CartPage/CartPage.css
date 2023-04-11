@@ -1,0 +1,51 @@
+.ContainerMain{
+    display: block;
+    margin: auto;
+    width: 70vw;
+    height: 600px;
+    padding-top: 40px;
+}
+
+.ContainerTitle{
+    text-align: center;
+    font-size: 2em;
+}
+
+.ContainerCart{
+    text-align: center;
+}
+
+.Total{
+    margin-top: 40px;
+    text-align: center;
+    font-weight: 700;
+    font-size: 1.6em;
+}
+
+.Link{
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    text-align: center;
+    width: 12vw;
+    margin: auto;
+    color: rgb(0, 0, 0);
+    background-color: #07a0c3;
+    padding: 5px;
+    border-radius: 20px;
+    font-size: .9em;
+    font-family: sans-serif;
+    font-weight: 700;
+    border: none;
+    box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.5);
+    gap: 60px;
+    text-decoration: none;
+    border: 2px solid #0885a1;
+}
+
+.Link:hover{
+    color: rgb(255, 255, 255);
+    background-color: #06596b;
+    cursor: pointer;
+    box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.8);
+}

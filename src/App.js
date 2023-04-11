@@ -8,6 +8,7 @@ import { CartProvider } from './components/CartContext/CartContext';
 import { useEffect, useState } from 'react';
 import NavbarMobile from './components/NavbarMobile/NavbarMobile';
 import Footer from './components/Footer/Footer'
+import CartPage from './components/CartPage/CartPage';
 
 
 function DesktopView() {
@@ -21,6 +22,7 @@ function DesktopView() {
                 <Route path='/' element={<ItemListContainer/>}/>
                 <Route path='/category/:categoryId' element={<ItemListContainer/>}/>
                 <Route path='/item/:productId' element={<ItemDetailsContainer/>}/>
+                <Route path='/cart' element={<CartPage/>}/>
               </Routes>
               <Footer/>
         </BrowserRouter>  
