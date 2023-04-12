@@ -10,6 +10,7 @@ import NavbarMobile from './components/NavbarMobile/NavbarMobile';
 import Footer from './components/Footer/Footer'
 import CartPage from './components/CartPage/CartPage';
 import Checkout from './components/Checkout/Checkout'
+import Login from './components/Login/Login';
 
 
 function DesktopView() {
@@ -23,6 +24,7 @@ function DesktopView() {
                 <Route path='/' element={<ItemListContainer/>}/>
                 <Route path='/category/:categoryId' element={<ItemListContainer/>}/>
                 <Route path='/item/:productId' element={<ItemDetailsContainer/>}/>
+                <Route path='/Login' element={<Login/>}/>
                 <Route path='/cart' element={<CartPage/>}/>
                 <Route path='/checkout' element={<Checkout/>}/>
               </Routes>
@@ -44,6 +46,7 @@ function MobileView() {
                   <Route path='/' element={<ItemListContainer/>}/>
                   <Route path='/category/:categoryId' element={<ItemListContainer/>}/>
                   <Route path='/item/:productId' element={<ItemDetailsContainer/>}/>
+                  <Route path='/Login' element={<Login/>}/>
                   <Route path='/cart' element={<CartPage/>}/>
                   <Route path='/checkout' element={<Checkout/>}/>
                 </Routes>

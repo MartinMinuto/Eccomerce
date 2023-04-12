@@ -1,20 +1,44 @@
 import './Checkout.css'
-import { useContext } from 'react'
+import { useContext, useState } from 'react'
 import { CartContext } from '../CartContext/CartContext'
 import { Db } from '../../Services/Firebase/firebaseConfig'
-import { documentId, getDocs, query, collection, where, writeBatch } from 'firebase/firestore'
+import { documentId, getDocs, query, collection, where, writeBatch, addDoc } from 'firebase/firestore'
+import Login from '../Login/Login'
 
 const Checkout = () => {
-   const { cart, total } = useContext(CartContext)
+   const [order, setOrden] = useState('')
+   const [user, setUser] = useState(null);
+   const { cart, clearCart } = useContext(CartContext)
 
-   const handleConfirm = async (userData) => { 
+   const handleLogin = (userData) => {
+    setUser(userData);
+  };
+
+  const handleLogout = () => {
+    setUser(null);
+  };
+
+
+   const handleConfirm = async () => { 
       const objOrder = {
-        buyer: {},
-        items: cart,
-        total: total,
+        buyer: user,
+        items: cart
       }
 
-      const ids = cart.map(prod => prod.id)
+      const ids = cart.map(prod => prod.id);
+      if (!ids || ids.length === 0) {
+      console.error("No hay productos en el carrito");
+      return;
+      }
+      if (!Db) {
+      console.error("Error en Firebase");
+      return;
+      }
+      if (!user) {
+      console.error("No hay usuario logueado");
+      return;
+      }
+
       const productsRef = query(collection(Db, 'products'), where(documentId(), 'in', ids))
       const productsAdd = await getDocs(productsRef)
       const { docs } = productsAdd
@@ -34,15 +58,38 @@ const Checkout = () => {
         }
       })
 
-    }  
+      if(outOfStock.length === 0){
+        batch.commit()
 
+        const orderRef = collection(Db, 'orders')
+        const ordenAdd = await addDoc(orderRef, objOrder)
 
-    return(
+      clearCart()
+      setOrden(ordenAdd.id)
+      } else {
+          console.log('No hay items')
+      }
+
+    };
+
+    return (
         <div className='CheckoutContainer'>
-             <h1>Checkout</h1>
-             <a className='Btn' onClick={handleConfirm}>Confirm</a>
+          {user ? (
+            <div>
+              <h1>Checkout</h1>
+              <h2>Bienvenido {user.email}!</h2>
+              <h2>El id es :{order}</h2>
+              <button className='Btn' onClick={handleLogout}>Logout</button>
+              <button className='Btn' onClick={handleConfirm}>Confirm</button>
+            </div>
+          ) : (
+            <div>
+              <h1>Checkout</h1>
+              <Login handleLogin={handleLogin} />
+            </div>
+          )}
         </div>
-    )
+      );
 }
 
 export default Checkout
