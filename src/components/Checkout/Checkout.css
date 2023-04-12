@@ -6,3 +6,29 @@
     height: 600px;
     margin: auto;
 }
+
+.TextCheckoutContainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin: auto;
+    margin-top: 30px;
+}
+
+.TitleCheckout{
+    text-align: center;
+    margin: auto;
+}
+
+.ButtonCheckout{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    
+}
+
+.IdCheckout{
+    font-size: 1em;
+}

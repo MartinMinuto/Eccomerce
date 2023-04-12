@@ -1,0 +1,25 @@
+.ContainerLogin{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.InputLogin{
+    width: 200px;
+    height: 20px;
+    border-radius: 20px;
+    margin-bottom: 20px;
+    border: 2px solid #086788;
+}
+
+.InputLogin:hover{
+    border-color:#06596b;
+    transform: scale(1.1);
+    transition: 0.6s;
+}
+
+.FormLogin{
+    display: flex;
+    flex-direction: column;
+}

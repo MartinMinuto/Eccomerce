@@ -27,15 +27,16 @@ const Checkout = () => {
 
       const ids = cart.map(prod => prod.id);
       if (!ids || ids.length === 0) {
-      console.error("No hay productos en el carrito");
+      console.log("No hay productos en el carrito");
+      alert("No hay productos en el carrito")
       return;
       }
       if (!Db) {
-      console.error("Error en Firebase");
+      console.log("Error en Firebase");
       return;
       }
       if (!user) {
-      console.error("No hay usuario logueado");
+      console.log("No hay usuario logueado");
       return;
       }
 
@@ -75,16 +76,18 @@ const Checkout = () => {
     return (
         <div className='CheckoutContainer'>
           {user ? (
-            <div>
-              <h1>Checkout</h1>
-              <h2>Bienvenido {user.email}!</h2>
-              <h2>El id es :{order}</h2>
+            <div className='TextCheckoutContainer'>
+              <h1 className='TitleCheckout'>Checkout</h1>
+              <h2>Gracias por tu compra {user.email}</h2>
+              <h2  className='IdCheckout'>El id de tu compra es :{order}</h2>
+              <div className='ButtonCheckout'>
               <button className='Btn' onClick={handleLogout}>Logout</button>
               <button className='Btn' onClick={handleConfirm}>Confirm</button>
+              </div>
             </div>
           ) : (
             <div>
-              <h1>Checkout</h1>
+              <h1 className='TitleCheckout'>Login</h1>
               <Login handleLogin={handleLogin} />
             </div>
           )}

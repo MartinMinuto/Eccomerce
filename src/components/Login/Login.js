@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import './Login.css'
 
 const Login = ({ handleLogin }) => {
   const [email, setEmail] = useState('');
@@ -21,14 +22,14 @@ const Login = ({ handleLogin }) => {
 
   return (
     <div className='ContainerLogin'>
-      <form onSubmit={handleFormSubmit}>
+      <form className='FormLogin' onSubmit={handleFormSubmit}>
         <label>
           <h2>Email:</h2>
-          <input type="text" value={email} onChange={handleEmailChange} />
+          <input className='InputLogin' type="text" value={email} onChange={handleEmailChange} />
           <h2>Contraseña:</h2>
-          <input type="password" value={password} onChange={handlePasswordChange} />
+          <input className='InputLogin' type="password" value={password} onChange={handlePasswordChange} />
         </label>
-        <button type="submit">Iniciar sesión</button>
+        <button className='Btn' type="submit">Iniciar sesión</button>
       </form>
     </div>
   );
